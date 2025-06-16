@@ -1,0 +1,81 @@
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f2f6fa;
+    padding: 30px;
+    color: #333;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0077cc;
+    font-weight: 600;
+  }
+
+  #searchBox {
+    display: block;
+    margin: 0 auto 10px auto;
+    padding: 10px 15px;
+    width: 300px;
+    border: 2px solid #0077cc;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s ease;
+  }
+
+  #searchBox:focus {
+    border-color: #005fa3;
+    box-shadow: 0 0 6px #aad4ff;
+  }
+
+  #notFound {
+    text-align: center;
+    color: #d32f2f;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 16px;
+    display: none;
+  }
+
+  table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  th {
+    background-color: #0077cc;
+    color: white;
+    padding: 12px 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  td {
+    padding: 12px 15px;
+    font-size: 15px;
+    color: #444;
+    border-top: 1px solid #ddd;
+  }
+
+  tr:hover td {
+    background-color: #f1f9ff;
+  }
+
+  @media (max-width: 600px) {
+    #searchBox {
+      width: 90%;
+    }
+
+    table, th, td {
+      font-size: 14px;
+    }
+  }
+</style>
